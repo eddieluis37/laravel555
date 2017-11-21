@@ -17,6 +17,7 @@ class CreateProfessionsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('profession_id'); 
             $table->foreign('profession_id')->references('id')->on('professions');
+            $tablr->string('title', 100);
             $table->timestamps();
         });
     }
