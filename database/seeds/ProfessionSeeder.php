@@ -8,9 +8,12 @@ class ProfessionSeeder extends Seeder
 {
     public function run()
     {
+    //  DB::table('professions')->truncate();
+        
         DB::table('professions')->insert([
+            
             'title' => 'Desarrollador back-end',
         ]);
     }   
 }   
- 
+    
